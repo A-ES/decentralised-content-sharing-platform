@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Content Sharing Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .upload-section, .content-feed {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-section h2, .content-feed h2 {
+            margin-top: 0;
+        }
+
+        .upload-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .upload-section input, .upload-section textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .upload-section button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .upload-section button:hover {
+            background-color: #218838;
+        }
+
+        .content-feed article {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .content-feed article h3 {
+            margin-top: 0;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            width: calc(100% - 22px);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Decentralized Content Sharing Platform</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Content Upload Section -->
+        <section class="upload-section">
+            <h2>Upload New Content</h2>
+            <form id="uploadForm">
+                <input type="text" id="title" name="title" placeholder="Content Title" required>
+                <textarea id="description" name="description" rows="4" placeholder="Content Description" required></textarea>
+                <input type="file" id="file" name="file" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="search-bar">
+            <input type="text" id="search" placeholder="Search content...">
+        </section>
+
+        <!-- Content Feed -->
+        <section class="content-feed">
+            <h2>Content Feed</h2>
+
+            <article>
+                <h3>Example Content Title 1</h3>
+                <p>Description for the content goes here.</p>
+                <a href="#">Download/View</a>
+            </article>
+
+            <article>
+                <h3>Example Content Title 2</h3>
+                <p>Description for the content goes here.</p>
+                <a href="#">Download/View</a>
+            </article>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
